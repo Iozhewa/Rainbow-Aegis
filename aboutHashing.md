@@ -26,11 +26,65 @@ Your progress through this project can be marked `complete` at any of the follow
 | Superuser    | Hershey Chocolate Bar  | 100% (16 pts) |
 ***
 ## CALM the Emails
+*There are four flags here*
 <a name="Emails" />
-*There are four flags here!*
+
 - [x] Task: Find out which users in Chad's Network have been compromised
-- [ ] 
-- [ ]
-- [ ]
-- [ ]
-- [ ] 
+- [ ] _
+- [ ] _
+- [ ] _
+- [ ] _
+
+[pkt]: https://www.google.com
+Start by downloading the following Packet Tracer [network][pkt]:
+
+![full view of network topology](image.jpg)
+
+How's it looking? Here's the scenario:
+```
+You are AGATHA, an assistant network administrator. Assistant of CHAD, specifically.
+  CHAD boasts he is able to support two demands:
+  An EXPANDABLE network tested with an engineering client, and an EQUALLY DISTRIBUTED system for higher transfer speeds.
+
+This has garnered the attention of the BITWISE JAZZ TROUPE, and the SHAzam AIRLINE WHISTLEBLOWERS.
+
+Excited, CHAD registers the new users and leaves you to monitor one last SYSTEM UPDATE the night before launch.
+  The office lights flicker. Your monitor alerts you of unregistered activity. All PCs suddenly light up.
+
+That's when you decide you should probably suspend all accounts...
+```
+We've situated you at a spot to interact with the `(1) 'Internet' Router` and the `(2) Server Room`. 
+That is, all information relevant to your task will be here.
+
+![diagram of YOU ARE HERE, focusing on the three admin devices](image.jpg)
+
+### First: Check Chad's Configuration for Context Clues
+Double-click on the router, and look for the `CLI tab` from the resulting pop-up. It should be near the top-left corner of that window.
+
+![cursor hovers over router](image.jpg)
+![zoom-in on the router interface tabs](image.jpg)
+![command-line interface](image.jpg)
+
+So... Chad did register his users right before the big ol' reboot.
+Let's run some diagnostics to see what could've happened...
+```
+Press RETURN to get started!
+  ...
+Router> enable
+Router#show ip dhcp pool
+  ...
+Router#show access-list
+  ...
+```
+What are we noticing?
+> I'm getting a lot of 10.13.37.xx and 192.168.1.xx...
+
+Elementary!
+What you're looking at are Class A and Class C IP addresses, respectfully. They're assigned depending on the network range of that network. That's our DHCP clue.
+
+What about the access list clue?
+> The Class C addresses are denied under 'Block Bus'... and Class C are denied under 'Block RIng'...
+
+Excellent.
+Chad's Hybrid network consists of a Bus-Ring topology.
+## Second: Get to Know our Users
