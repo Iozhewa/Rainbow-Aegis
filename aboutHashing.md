@@ -49,7 +49,7 @@ You are AGATHA, an assistant network administrator. Assistant of CHAD, specifica
 This has garnered the attention of the BITWISE JAZZ TROUPE, and the SHAzam AIRLINE WHISTLEBLOWERS.
 
 Excited, CHAD registers the new users and leaves you to monitor one last SYSTEM UPDATE the night before launch.
-  The office lights flicker. Your monitor alerts you of unregistered activity. All PCs suddenly light up.
+  The office lights flicker. Your monitor alerts you of errors resequencing the server data. All PCs suddenly light up.
 
 That's when you decide you should probably suspend all accounts...
 ```
@@ -83,8 +83,52 @@ Elementary!
 What you're looking at are Class A and Class C IP addresses, respectfully. They're assigned depending on the network range of that network. That's our DHCP clue.
 
 What about the access list clue?
-> The Class C addresses are denied under 'Block Bus'... and Class C are denied under 'Block RIng'...
+> The Class C addresses are denied under 'Block Bus'... and Class C are denied under 'Block Ring'...
 
 Excellent.
 Chad's Hybrid network consists of a Bus-Ring topology.
 ## Second: Get to Know our Users
+
+![ip dhcp brief](image.jpg)
+![access list](image.jpg)
+
+Bus topologies typically follow a `linear connection` for simple expansion. It's likely why Chad considered trialing the bottom network before offering to...?
+Ring topologies, on the other hand, have a `hub of switches` to transfer data in one direction. This gives less collision chance, and offers higher transfer speeds. Chad would leave this for...?
+> I assume you have a final quiz about all these somewhere...
+
+You know me too well!
+On that note, let's see just who is in these topologies-
+
+![SHAzam AW server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
+![BJT Records server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
+
+
+
+LATER: we should probably check your monitoring package to see what you can do about the reboot (and possible intrusion). 
+Assume in the scenario Chad has a post-it note somewhere, directing you to some case-specific actions if something goes awry. In reality, I'd like you to explore a directory.
+```
+# Note to novices: This does stay in your filesystem after the activity. However, it doesn't act independently. 
+C:\Users\xxx> dir
+  ...
+C:\Users\xxx> cd Documents
+C:\Users\xxx\Documents> mkdir ChadPackage
+C:\Users\xxx\Documents\ChadPackage> cd ChadPackage
+C:\Users\xxx\Documents\ChadPackage> git clone https://github.com/Iozhewa/RainbowAegis_cPack.git
+```
+
+![GitHub-side directory contents](image.jpg)
+
+What we're looking for at the moment is the `RainbowTables.py` program.
+```
+C:\Users\xxx> dir
+  ...
+C:\Users\xxx\Documents\ChadPackage> python RainbowTables.py
+  ...
+```
+> This one is also talking to me...
+
+Yup!
+Chad stores his passwords in a rainbow table, to account for a possible data breach. Rainbow tables store login details in "Username/Hash" format, so that they can access them securely.
+If the server fails to protect them, the unique function making these hashes will be known only to us. You won't be able to enter an account, though, if he hid his salt well!
+
+![input-outputs of RainbowTables.py](image.jpg)
