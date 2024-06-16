@@ -7,12 +7,14 @@ Explore some of the ways hash functions protect sensitive data with this CTF.
 - Applying the 'Hash & Salt' method into Email and FTP accounts
 - Using checksums to observe file modifications
 ## Flag Criteria
-- [ ] CALM the Emails (4) [jump to](#Emails)
-- [ ] CALM the Files (4)
-- [ ] Interview with a Router (2)
-- [ ] Interview with a Server (2)
-- [ ] Taming the Hybrid (2)
-- [ ] ???
+- [ ] CALM 1st, 2nd SHAzam email (2 pts) [jump to](#some-section)
+- [ ] CALM 1st, 2nd Bitwise email (2 pts) [jump to](#some-section)
+- [ ] SystemSyster 1st, 2nd SHAzam FTP (2 pts) [jump to](#some-section)
+- [ ] SystemSyster 1st, 2nd Bitwise FTP (2 pts) [jump to](#some-section)
+- [ ] Quizard... Salt Q, Checksum Q, Bus Q, Ring Q (4 pts) [jump to](#some-section)
+- [ ] ??? (4 pts) [jump to](#some-section)
+
+Total flags: `16`
 > Hey... this is a lot for one activity...
 
 No need to rush! This CTF can be completed at any pace :]
@@ -25,15 +27,9 @@ Your progress through this project can be marked `complete` at any of the follow
 | Analyst      | A Coffee Run           | 81% (13 pts)  |
 | Superuser    | Hershey Chocolate Bar  | 100% (16 pts) |
 ***
-## CALM the Emails
-*There are four flags here*
+## Everybody CALM down... 
+*How many flags are here?*
 <a name="Emails" />
-
-- [x] Task: Find out which users in Chad's Network have been compromised
-- [ ] _
-- [ ] _
-- [ ] _
-- [ ] _
 
 [pkt]: https://www.google.com
 Start by downloading the following Packet Tracer [network][pkt]:
@@ -87,7 +83,9 @@ What about the access list clue?
 
 Excellent.
 Chad's Hybrid network consists of a Bus-Ring topology.
-## Second: Get to Know our Users
+
+LATER: Second should probably be a continuation md. I don't want this to look like a textbook.
+### Second: Get to Know our Users
 
 ![ip dhcp brief](image.jpg)
 ![access list](image.jpg)
@@ -102,10 +100,17 @@ On that note, let's see just who is in these topologies-
 ![SHAzam AW server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
 ![BJT Records server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
 
+You can choose to monitor Email or FTP configuration first, just keep them in mind for later.
+However, I suspect the Big Boot has altered `Email login details` and `FTP saved files`
 
+![SHAzam AW email detals](image.jpg) ![SHAZAM AW FTP details](image.jpg)
+![BJT Records email detals](image.jpg) ![BJT Records FTP details](image.jpg)
 
-LATER: we should probably check your monitoring package to see what you can do about the reboot (and possible intrusion). 
-Assume in the scenario Chad has a post-it note somewhere, directing you to some case-specific actions if something goes awry. In reality, I'd like you to explore a directory.
+Alright. I think we're ready to consult... `The  C H A D  package`
+
+### Third: Set things Right
+It's time to check your monitoring package to see what you can do about the reboot. 
+Assume in the scenario Chad has a post-it note somewhere, directing you to some case-specific actions if something goes awry. In reality, I'd like you to explore a Git.
 ```
 # Note to novices: This does stay in your filesystem after the activity. However, it doesn't act independently. 
 C:\Users\xxx> dir
@@ -130,5 +135,13 @@ C:\Users\xxx\Documents\ChadPackage> python RainbowTables.py
 Yup!
 Chad stores his passwords in a rainbow table, to account for a possible data breach. Rainbow tables store login details in "Username/Hash" format, so that they can access them securely.
 If the server fails to protect them, the unique function making these hashes will be known only to us. You won't be able to enter an account, though, if he hid his salt well!
+
+```python
+"ChadSupport Hybrid Topology Rainbow Table" (omnicron 4.3.6)
+'EXPLORING NETWORK:' ___    'EXPLORING GROUP:' ___    'EXPLORING USER:' ___
+# Commands: network [bus/ring], group [name], user [name],
+## hash [complete all other commands, and press ENTER]
+>>  
+```
 
 ![input-outputs of RainbowTables.py](image.jpg)
