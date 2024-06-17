@@ -30,7 +30,7 @@ Your progress through this project can be marked `complete` at any of the follow
 <a name="CALM" />
 
 ## Everybody CALM down... 
-*Resolve user logins with CALM for two flags*
+*Resolve user logins with CALM for four flags*
 
 [pkt]: https://www.google.com
 Start by downloading the following Packet Tracer [network][pkt]:
@@ -140,10 +140,12 @@ If the server fails to protect them, the unique function making these hashes wil
 
 ```python
 "Chad's Algorithm for Liable Machinery" (omnicron 4.3.6)
-# 'Command Number:' __
-'EXPLORING NETWORK:' ___    'EXPLORING GROUP:' ___    'EXPLORING USER:' ___
-## Commands: network [bus/ring], group [name], user [name], report [user]
-## hash [complete all other commands, and press ENTER]
+# 'Line Number:' __
+'EXPLORING NETWORK:' ___    'EXPLORING GROUP:' ___    'USER NAMES:' Private/Public
+## Commands: network [bus/ring], group [name], user [salt], report [user]
+## hash -network __ -group __ (Fill in network, fill in group, and press ENTER)
+## user [salt] <-- Salts are a random sequence of numbers, perhaps accompained by a random letter too.
+                   Where have you seen that in Email/FTP?
 >>
 . . .
 >> report Chad
@@ -155,11 +157,71 @@ or
 ### No compromise detected. (3 tries left.)
 ```
 
-![input-outputs of RainbowTables.py](image.jpg)
+![input-outputs of CALM.py](image.jpg)
 
 When you've CALMed all emails compromised (I believe there were four?) CALM will release its captured flag code. Something like:
 `task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Usernames:Confirmed:[gibberish so you don't copypaste this format])`
+***
 <a name="Syster" />
 
 ## Syster from another Myster? 
-*Locate FTP user logins with CALM for two flags*
+*Locate FTP user logins with SystemSyster for four flags*
+
+What else is in Chad's Package?
+```
+C:\Users\xxx\Documents\ChadPackage> cd FilesLog
+C:\Users\xxx\Documents\ChadPackage\FilesLog> dir
+    fileRoster_preboot
+    fileRoster_postboot
+```
+> It's almost like he wanted the glitch to happen...
+
+Perhaps the cost of toying with experimental operating systems :[
+This task will be less guided for you, as the previous flags help you narrow down to what files were changed.
+```
+C:\Users\xxx\Documents\ChadPackage> cd fileRoster_preboot
+    . . . <-- I recommend to keep things 'uniq' ;>
+              Screenshot any big list of files for cross-checking
+
+C:\Users\xxx\Documents\ChadPackage\fileRoster_preboot> cd ..
+C:\Users\xxx\Documents\ChadPackage\fileRoster_preboot> cd fileRoster_postboot
+    . . . <-- Try 'uniq' again
+              Are they supposed to be near-identical to preboot data? What happened?
+```
+
+### First: SystemSyster, the (red) Flag Sniffer
+```
+C:\Users\xxx\Documents\ChadPackage\fileRoster_postboot> cd ..
+C:\Users\xxx\Documents\ChadPackage> python SystemSyster.py
+  .  .  . 
+```
+Since the postboot roster is in some kind of hash function, Chad must've kept a program somwhere to evaluate message digests.
+Did you remember hashes are also message digests? This will be in the exam...
+```python
+"SystemSyster Checksum Modification Detector" (omnicron 4.3.6)
+# 'Line Number:' __
+'Encryption Functon:' hash(hash(text) + salt)  'Decryption Function:' unhash(unhash(text) - salt)
+## Commands: ciphertext -salt __ [name], plaintext -salt __ [name], blametext [name]
+
+>>
+. . .
+>> blametext Chad.txt
+### Based on your assessment, file (NAME:TYPE:SALT) has compromised details. Verify? [y/n]
+>> y
+### Checksum Modification detected! (1/2 for NETWORK)
+or
+>> y
+### No compromise detected. (3 tries left.)
+```
+![input-outputs of SystemSyster.py](image.jpg)
+
+When you've Sysed all files compromised (I believe there were four?) Syster will release its captured flag code. Something like:
+`task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Files:Confirmed:[gibberish so you don't copypaste this format])`
+***
+<a name="Quizard" />
+
+## Quizards of Trivially Place 
+*Answer some final comprehension questions, ~bughunt the program input~ 
+paste the Syster/CALM CTF codes somwhere, and earn ~eight~ four points!*
+
+Lorem
