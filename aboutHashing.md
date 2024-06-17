@@ -27,9 +27,10 @@ Your progress through this project can be marked `complete` at any of the follow
 | Analyst      | A Coffee Run           | 81% (13 pts)  |
 | Superuser    | Hershey Chocolate Bar  | 100% (16 pts) |
 ***
+<a name="CALM" />
+
 ## Everybody CALM down... 
 *Resolve user logins with CALM for two flags*
-<a name="CALM" />
 
 [pkt]: https://www.google.com
 Start by downloading the following Packet Tracer [network][pkt]:
@@ -158,6 +159,7 @@ or
 
 When you've CALMed all emails compromised (I believe there were four?) CALM will release its captured flag code. Something like:
 `task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Usernames:Confirmed:[gibberish so you don't copypaste this format])`
+<a name="Syster" />
+
 ## Syster from another Myster? 
 *Locate FTP user logins with CALM for two flags*
-<a name="Syster" />
