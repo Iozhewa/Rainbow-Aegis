@@ -79,3 +79,5 @@ When you've CALMed all emails compromised (I believe there were four?) CALM will
 - [x] Applied hashing and salts to protect sensitive data
 #### Up next...
   Using checksums to observe file modifications
+
+[<kbd>Previous Stage</kbd>](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/aHello_toNetwork.md)  [<kbd>Next Stage</kbd>](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/cFlags_withSyster.md)
