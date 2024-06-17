@@ -91,3 +91,5 @@ LATER: Second should probably be a continuation md. I don't want this to look li
 - [x] Explored integration of cryptography into LANs
 #### Up next...
   Hashing & Salts for Email and FTP
+  
+[<kbd><br> Next Stage </br></kbd>](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/bFlags_onCALM.md)
