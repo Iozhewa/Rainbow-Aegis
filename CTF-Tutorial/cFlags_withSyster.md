@@ -1,5 +1,3 @@
-<a name="Syster" />
-
 ## Syster from another Myster? 
 *Locate FTP user logins with SystemSyster for four flags*
 
