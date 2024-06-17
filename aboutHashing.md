@@ -7,10 +7,10 @@ Explore some of the ways hash functions protect sensitive data with this CTF.
 - Applying the 'Hash & Salt' method into Email and FTP accounts
 - Using checksums to observe file modifications
 ## Flag Criteria
-- [ ] CALM 1st, 2nd SHAzam email (2 pts) [jump to](#some-section)
-- [ ] CALM 1st, 2nd Bitwise email (2 pts) [jump to](#some-section)
-- [ ] SystemSyster 1st, 2nd SHAzam FTP (2 pts) [jump to](#some-section)
-- [ ] SystemSyster 1st, 2nd Bitwise FTP (2 pts) [jump to](#some-section)
+- [ ] CALM 1st, 2nd SHAzam email (2 pts) [jump to](#CALM)
+- [ ] CALM 1st, 2nd Bitwise email (2 pts)
+- [ ] SystemSyster 1st, 2nd SHAzam FTP (2 pts) [jump to](#Syster)
+- [ ] SystemSyster 1st, 2nd Bitwise FTP (2 pts)
 - [ ] Quizard... Salt Q, Checksum Q, Bus Q, Ring Q (4 pts) [jump to](#some-section)
 - [ ] ??? (4 pts) [jump to](#some-section)
 
@@ -28,8 +28,8 @@ Your progress through this project can be marked `complete` at any of the follow
 | Superuser    | Hershey Chocolate Bar  | 100% (16 pts) |
 ***
 ## Everybody CALM down... 
-*How many flags are here?*
-<a name="Emails" />
+*Resolve user logins with CALM for two flags*
+<a name="CALM" />
 
 [pkt]: https://www.google.com
 Start by downloading the following Packet Tracer [network][pkt]:
@@ -100,8 +100,9 @@ On that note, let's see just who is in these topologies-
 ![SHAzam AW server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
 ![BJT Records server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
 
-You can choose to monitor Email or FTP configuration first, just keep them in mind for later.
-However, I suspect the Big Boot has altered `Email login details` and `FTP saved files`
+Open the `Email` service for now, and keep that `FTP` one for later. Both have a list of users and passwords.
+I suspect the Big Boot has altered `Email login details`. No biggie, Chad must've kept a copy somewhere. Can switching OS actually do this?
+...you're reading into things.
 
 ![SHAzam AW email detals](image.jpg) ![SHAZAM AW FTP details](image.jpg)
 ![BJT Records email detals](image.jpg) ![BJT Records FTP details](image.jpg)
@@ -123,11 +124,11 @@ C:\Users\xxx\Documents\ChadPackage> git clone https://github.com/Iozhewa/Rainbow
 
 ![GitHub-side directory contents](image.jpg)
 
-What we're looking for at the moment is the `RainbowTables.py` program.
+What we're looking for at the moment is the `CALM.py` program.
 ```
 C:\Users\xxx> dir
   ...
-C:\Users\xxx\Documents\ChadPackage> python RainbowTables.py
+C:\Users\xxx\Documents\ChadPackage> python CALM.py
   ...
 ```
 > This one is also talking to me...
@@ -137,11 +138,26 @@ Chad stores his passwords in a rainbow table, to account for a possible data bre
 If the server fails to protect them, the unique function making these hashes will be known only to us. You won't be able to enter an account, though, if he hid his salt well!
 
 ```python
-"ChadSupport Hybrid Topology Rainbow Table" (omnicron 4.3.6)
+"Chad's Algorithm for Liable Machinery" (omnicron 4.3.6)
+# 'Command Number:' __
 'EXPLORING NETWORK:' ___    'EXPLORING GROUP:' ___    'EXPLORING USER:' ___
-# Commands: network [bus/ring], group [name], user [name],
+## Commands: network [bus/ring], group [name], user [name], report [user]
 ## hash [complete all other commands, and press ENTER]
->>  
+>>
+. . .
+>> report Chad
+### Based on your assessment, hash (USER:GROUP:NETWORK) has compromised details. Verify? [y/n]
+>> y
+### Liable Machinery detected! (1/2 for NETWORK)
+or
+>> y
+### No compromise detected. (3 tries left.)
 ```
 
 ![input-outputs of RainbowTables.py](image.jpg)
+
+When you've CALMed all emails compromised (I believe there were four?) CALM will release its captured flag code. Something like:
+`task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Usernames:Confirmed:[gibberish so you don't copypaste this format])`
+## Syster from another Myster? 
+*Locate FTP user logins with CALM for two flags*
+<a name="Syster" />
