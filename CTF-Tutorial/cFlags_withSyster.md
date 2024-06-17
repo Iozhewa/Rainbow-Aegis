@@ -58,3 +58,5 @@ When you've Sysed all files compromised (I believe there were four?) Syster will
 - [x] Using checksums to observe file modifications
 #### Up next...
 Pop quiz, and Random flags :anguished:
+
+[<kbd>Previous Stage</kbd>](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/bFlags_onCALM.md)  [<kbd>Next Stage</kbd>](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/dFlags_withQuizard.md)
