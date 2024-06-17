@@ -7,12 +7,12 @@ Explore some of the ways hash functions protect sensitive data with this CTF.
 - Applying the 'Hash & Salt' method into Email and FTP accounts
 - Using checksums to observe file modifications
 ## Flag Criteria
-- [ ] CALM 1st, 2nd SHAzam email (2 pts) [jump to](#CALM)
+- [ ] CALM 1st, 2nd SHAzam email (2 pts)
 - [ ] CALM 1st, 2nd Bitwise email (2 pts)
-- [ ] SystemSyster 1st, 2nd SHAzam FTP (2 pts) [jump to](#Syster)
+- [ ] SystemSyster 1st, 2nd SHAzam FTP (2 pts)
 - [ ] SystemSyster 1st, 2nd Bitwise FTP (2 pts)
-- [ ] Quizard... Salt Q, Checksum Q, Bus Q, Ring Q (4 pts) [jump to](#some-section)
-- [ ] ??? (4 pts) [jump to](#some-section)
+- [ ] Quizard... Salt Q, Checksum Q, Bus Q, Ring Q (4 pts)
+- [ ] ??? (4 pts)
 
 Total flags: `16`
 > Hey... this is a lot for one activity...
