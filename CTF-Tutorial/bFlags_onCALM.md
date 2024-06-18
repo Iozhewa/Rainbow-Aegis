@@ -1,7 +1,7 @@
 ### Second: Get to Know our Users
 
-![ip dhcp brief](image.jpg)
-![access list](image.jpg)
+![ip dhcp pool]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ipPool.png))
+![access list]([image](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/privileges.png).jpg)
 
 Bus topologies typically follow a `linear connection` for simple expansion. It's likely why Chad considered trialing the bottom network before offering to...?
 Ring topologies, on the other hand, have a `hub of switches` to transfer data in one direction. This gives less collision chance, and offers higher transfer speeds. Chad would leave this for...?
@@ -10,17 +10,19 @@ Ring topologies, on the other hand, have a `hub of switches` to transfer data in
 You know me too well!
 On that note, let's see just who is in these topologies-
 
-![SHAzam AW server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
-![BJT Records server open](image.jpg) ![Landing window](image.jpg) ![Services window](image.jpg)
+![SHAzam AW server open]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer.png)) ![Landing window]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab.png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection.png)
+***
+![BJT Records server open](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer(1).png) ![Landing window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab(1).png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection(1).png)
 
-Open the `Email` service for now, and keep that `FTP` one for later. Both have a list of users and passwords.
+Open the `Email` service for now, and keep that `FTP` one also. Both have a list of users and passwords.
 I suspect the Big Boot has altered `Email login details`. No biggie, Chad must've kept a copy somewhere. Can switching OS actually do this?
 ...you're reading into things.
 
-![SHAzam AW email detals](image.jpg) ![SHAZAM AW FTP details](image.jpg)
-![BJT Records email detals](image.jpg) ![BJT Records FTP details](image.jpg)
+![SHAzam AW email detals](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailAccounts.png) ![SHAZAM AW FTP details](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ftpSection.png)
+***
+![BJT Records email detals](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailAccounts(1).png) ![BJT Records FTP details](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ftpSection(1).png)
 
-Alright. I think we're ready to consult... `The  C H A D  package`
+FTP will come later. For now, I think we're ready to consult... `The  C H A D  package`
 
 ### Third: Set things Right
 It's time to check your monitoring package to see what you can do about the reboot. 
@@ -36,7 +38,7 @@ C:\Users\xxx\Documents\ChadPackage> cd ChadPackage
 C:\Users\xxx\Documents\ChadPackage> git clone https://github.com/Iozhewa/RainbowAegis_cPack.git
 ```
 
-![GitHub-side directory contents](image.jpg)
+![GitHub-side directory contents](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/hybridDirectory.png)
 
 What we're looking for at the moment is the `CALM.py` program.
 ```
@@ -70,7 +72,7 @@ or
 ### No compromise detected. (3 tries left.)
 ```
 
-![input-outputs of CALM.py](image.jpg)
+![input-outputs of CALM.py]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/CALMprogram.png))
 
 When you've CALMed all emails compromised (I believe there were four?) CALM will release its captured flag code. Something like:
 `task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Usernames:Confirmed:[gibberish so you don't copypaste this format])`
