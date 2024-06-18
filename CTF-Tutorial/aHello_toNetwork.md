@@ -35,7 +35,7 @@ Your progress through this project can be marked `complete` at any of the follow
 [pkt]: https://www.google.com
 Start by downloading the following Packet Tracer [network][pkt]:
 
-![full view of network topology](image.jpg)
+![full view of network topology](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ChadsHybrid.png)
 
 How's it looking? Here's the scenario:
 ```
@@ -53,14 +53,14 @@ That's when you decide you should probably suspend all accounts...
 We've situated you at a spot to interact with the `(1) 'Internet' Router` and the `(2) Server Room`. 
 That is, all information relevant to your task will be here.
 
-![diagram of YOU ARE HERE, focusing on the three admin devices](image.jpg)
+![diagram of YOU ARE HERE, focusing on the three admin devices](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/AdminDevices.png)
 
 ### First: Check Chad's Configuration for Context Clues
 Double-click on the router, and look for the `CLI tab` from the resulting pop-up. It should be near the top-left corner of that window.
 
-![cursor hovers over router](image.jpg)
-![zoom-in on the router interface tabs](image.jpg)
-![command-line interface](image.jpg)
+![cursor hovers over router](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/RouterHovering.png)
+![zoom-in on the router interface tabs](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/TabsZoom.png)
+![command-line interface](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/CommInt.png)
 
 So... Chad did register his users right before the big ol' reboot.
 Let's run some diagnostics to see what could've happened...
