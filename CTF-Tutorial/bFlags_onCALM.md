@@ -26,7 +26,8 @@ Alright. I think we're ready to consult... `The  C H A D  package`
 It's time to check your monitoring package to see what you can do about the reboot. 
 Assume in the scenario Chad has a post-it note somewhere, directing you to some case-specific actions if something goes awry. In reality, I'd like you to explore a Git.
 ```
-# Note to novices: This does stay in your filesystem after the activity. However, it doesn't act independently. 
+# Note to novices: This does stay in your filesystem after the activity.
+  However, it doesn't act independently. 
 C:\Users\xxx> dir
   ...
 C:\Users\xxx> cd Documents
