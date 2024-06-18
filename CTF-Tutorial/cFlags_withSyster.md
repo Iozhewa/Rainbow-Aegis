@@ -14,13 +14,15 @@ Perhaps the cost of toying with experimental operating systems :[
 This task will be less guided for you, as the previous flags help you narrow down to what files were changed.
 ```
 C:\Users\xxx\Documents\ChadPackage> cd fileRoster_preboot
-    . . . <-- I recommend to keep things 'uniq' ;>
+    . . . <-- If you see patterns in file naming, I'd recommend typing or copypasting them
+                in a doc for later
               Screenshot any big list of files for cross-checking
 
 C:\Users\xxx\Documents\ChadPackage\fileRoster_preboot> cd ..
 C:\Users\xxx\Documents\ChadPackage\fileRoster_preboot> cd fileRoster_postboot
-    . . . <-- Try 'uniq' again
-              Are they supposed to be near-identical to preboot data? What happened?
+    . . . <-- If you see patterns in file naming, I'd recommend typing or copypasting them
+                in a doc for later
+              Are these filenames supposed to be near-identical to preboot data? What happened?
 ```
 
 ### First: SystemSyster, the (red) Flag Sniffer
