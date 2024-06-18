@@ -49,7 +49,7 @@ or
 >> y
 ### No compromise detected. (3 tries left.)
 ```
-![input-outputs of SystemSyster.py](image.jpg)
+![input-outputs of SystemSyster.py]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/SysterIO.png))
 
 When you've Sysed all files compromised (I believe there were four?) Syster will release its captured flag code. Something like:
 `task complete! submit this... RainbowAegis_CTF(Reboot:Messed:Files:Confirmed:[gibberish so you don't copypaste this format])`
