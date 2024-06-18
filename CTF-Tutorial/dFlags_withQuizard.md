@@ -41,3 +41,51 @@ or "yyy waver~~ User, I do not understand... Your score remains the same."
 ```
 ***
 Welcome to the end of the CTF.
+```mermaid
+pie
+"Flags per SHAzam and Bitwise issue" : 2
+"Flags in SystemSyster and CALM" : 4
+"Quizard Tasks": 8
+```
+
+Here was roughly the magnitude of each task you did. Whatever you were able to accomplish, I hope it has been interesting!
+This task was inspired by TryHackMe's "Introduction to Cryptography" room by Strategos. If you would like to explore broader applications of cryptogrpahy, this room is highly recommended.
+Have a good day.
+***
+***
+### Bibliography (using IEEE Citation for Engineering and IT)\
+[1] Comparitech. “PowerShell Cheat Sheet”. Comparitech. 
+
+https://cdn.comparitech.com/wp-content/uploads/2018/05/Comparitech-Powershell-cheatsheet-1024x695.jpeg. (accessed May 25, 2024).
+
+[2] ComputerNetworkingNotes. “Configure Standard Access Control List Step by Step Guide”. ComputerNetworkingNotes.
+
+https://www.computernetworkingnotes.com/ccna-study-guide/configure-standard-access-control-list-step-by-step-guide.html. (accessed May 20, 2024).
+
+[3] Gunell, M. & Pankratyeva, A. “30 PowerShell Commands You Must Know (Cheat Sheet Included)”. Techopedia. 
+
+https://www.techopedia.com/30-powershell-commands-you-must-know-cheat-sheet-included. (accessed May 25, 2024).
+
+[4] Programmiz. “Bitwise Operators in C Programming”. Parewa Labs Pvt. 
+
+https://www.programiz.com/c-programming/bitwise-operators (accessed May 29, 2024).
+
+[5] Pulkitagarwal03pulkit. “Advantages and Disadvantages of Bus Topology”. GeeksforGeeks. 
+
+https://www.geeksforgeeks.org/advantages-and-disadvantages-of-bus-topology/. (accessed June 5, 2024).
+
+[6] Pulkitagarwal03pulkit. “Advantages and Disadvantages of ring topology”. GeeksforGeeks. 
+
+https://www.geeksforgeeks.org/advantages-and-disadvantages-of-ring-topology/. (accessed June 5, 2024).
+
+[7] Shadit13064. “Implementation of Bus Topology in Cisco”. GeeksforGeeks. 
+
+https://www.geeksforgeeks.org/implementation-of-bus-topology-in-cisco/. (accessed June 5, 2024).
+
+[8] Shadit13064. “Implementation of Ring Topology in Cisco”. GeeksforGeeks. 
+
+https://www.geeksforgeeks.org/implementation-of-ring-topology-in-cisco/. (accessed June 5, 2024).
+
+[9] Strategos. “Introduction to Cryptography”. TryHackMe.
+
+https://tryhackme.com/r/room/cryptographyintro. (accessed May 18, 2024).
