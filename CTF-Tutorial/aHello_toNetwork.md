@@ -31,9 +31,8 @@ Your progress through this project can be marked `complete` at any of the follow
 
 ## Everybody CALM down... 
 *Resolve user logins with CALM for four flags*
-
-[pkt]: https://www.google.com
-Start by downloading the following Packet Tracer [network][pkt]:
+<!--[pkt]: https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ChadsHybrid.pkt-->
+Start by downloading the following Packet Tracer [network](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ChadsHybrid.pkt):
 
 ![full view of network topology](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ChadsHybrid.png)
 
