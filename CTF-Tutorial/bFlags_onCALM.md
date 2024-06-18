@@ -10,9 +10,9 @@ Ring topologies, on the other hand, have a `hub of switches` to transfer data in
 You know me too well!
 On that note, let's see just who is in these topologies-
 
-![SHAzam AW server open]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer.png)) ![Landing window]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab.png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection.png)
+![SHAzam AW server open]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer.png)) ![Landing window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab.png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection.png)
 ***
-![BJT Records server open](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer(1).png) ![Landing window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab(1).png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection(1).png)
+![BJT Records server open](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer(1).png) 
 
 Open the `Email` service for now, and keep that `FTP` one also. Both have a list of users and passwords.
 I suspect the Big Boot has altered `Email login details`. No biggie, Chad must've kept a copy somewhere. Can switching OS actually do this?
