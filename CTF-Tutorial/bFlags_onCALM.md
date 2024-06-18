@@ -1,7 +1,7 @@
 ### Second: Get to Know our Users
 
-![ip dhcp pool]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ipPool.png))
-![access list]([image](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/privileges.png).jpg)
+![ip dhcp pool](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/ipPool.png)
+![access list](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/privileges.png)
 
 Bus topologies typically follow a `linear connection` for simple expansion. It's likely why Chad considered trialing the bottom network before offering to...?
 Ring topologies, on the other hand, have a `hub of switches` to transfer data in one direction. This gives less collision chance, and offers higher transfer speeds. Chad would leave this for...?
@@ -10,7 +10,7 @@ Ring topologies, on the other hand, have a `hub of switches` to transfer data in
 You know me too well!
 On that note, let's see just who is in these topologies-
 
-![SHAzam AW server open]([image.jpg](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer.png)) ![Landing window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab.png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection.png)
+![SHAzam AW server open](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer.png) ![Landing window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/servicesTab.png) ![Services window](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/emailSection.png)
 ***
 ![BJT Records server open](https://github.com/Iozhewa/Rainbow-Aegis/blob/main/CTF-Tutorial/assets/openServer(1).png) 
 
